@@ -1,0 +1,79 @@
+.title {
+    font-size: 2em;
+    text-align: center;
+}
+
+img {
+    width: 80px;
+    max-height: 100px;
+}
+
+.table {
+    display: flex;
+}
+
+.pdfmidi {
+    display: inline-grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 40px 100px 100px 40px;
+    margin: 0 10%;
+}
+.pdfmidi .grid {
+    background:rgba(97, 4, 37, 0.5);
+    text-align: center;
+}
+.grid a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        font-weight: bolder;
+    }
+}
+
+.pupitre {
+    grid-row: 1;
+    grid-column: 2/7;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.pdf {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 5px;
+}
+.femmes {
+    grid-column: 2/4;
+}
+.soprano {
+    grid-column: 2;
+}
+.alto {
+    grid-column: 3;
+}
+.hommes {
+    grid-column: 4/6;
+}
+.tenor {
+    grid-column: 4;
+}
+.basse {
+    grid-column: 5;
+}
+.tutti {
+    grid-column: 6;
+}
+.midi1 {
+    grid-row: 2;
+    padding: 10px;
+}
+.midi2 {
+    grid-row: 3;
+    padding: 10px;
+}
+.plus {
+    grid-row: 4;
+}
+.trad {
+    grid-column: 1;
+}

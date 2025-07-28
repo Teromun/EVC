@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    color: rgb(97, 6, 53);
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(9, 1fr);
+    height: 70px;
+    background: linear-gradient(rgb(97, 6, 53), white);
+}
+
+.list {
+    border-style: 2px solid rgb(97, 6, 53);
+    background-color: rgb(97, 6, 53);
+    border-radius: 15px;
+    width: 120px;
+    text-align: center;
+    align-content: center;
+}
+
+.list a {
+    text-decoration: none;
+    background-color: rgb(97, 6, 53);
+    color: white;
+    font-size: 1.5em;
+    transition-property: font-size;
+    transition-duration: 200ms;
+    &:hover {
+        font-size: 1.8em;
+    }
+}
+.menu {
+    grid-row: 1;
+    grid-column: 1/4;
+    & a {        
+        padding-left: 20px;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.retour {
+    grid-row: 1;
+    grid-column: 4/10;
+    & a {    
+        font-size: 1.5em;
+        text-decoration: none;
+        color: white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    & a {
+        text-decoration: none;
+        color: rgb(97, 6, 53);
+        &:hover {
+            font-weight: bolder;
+        }
+    }
+}
+
+.nolist {
+    list-style-type: none;
+}
+
+.prochainConcert {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+span {
+    font-weight: bold;
+}
+li a {
+    text-decoration: none;
+    color: rgb(97, 6, 53);
+    &:hover {
+        font-weight: bolder;
+    }
+}
+
+form .connexion {
+    font-size: 2em;
+    text-align: center;
+}
+
+.connection-success {
+    border-style: 2px solid rgb(97, 6, 53);
+}
